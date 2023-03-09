@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+   /* Pointer of integer type, this can hold the
+    * address of a integer type variable.
+    */
+   int *p , *y;
+
+   int var = 10;
+   int yok = 20;
+   /* Assigning the address of variable var to the pointer
+   * p. The p can hold the address of var because var is
+    * an integer type variable.
+    */
+   p= &var;
+   y =&yok;
+   p =y;
+   printf("Value of variable var is: %d", var);
+   printf("\nValue of variable var is: %d", *p);
+   printf("\nAddress of variable var is: %p", &var);
+   printf("\nAddress of variable var is: %p", p);
+   printf("\nAddress of pointer p is: %p", &p);
+   
+   printf("\nValue of variable var is: %d", yok);
+   printf("\nValue of variable var is: %d", *y);
+   printf("\nAddress of variable var is: %p", &yok);
+   printf("\nAddress of variable var is: %p", y);
+   printf("\nAddress of pointer p is: %p", &y);
+   return 0;
+}
